@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans+JP|Oxygen|Play" rel="stylesheet">
+</head>
+
+<body>
+    <!------------------------------- C A B E Ç A L H O - C O M P L E T O ------------------------------->
+
+
+    <div class="cabecalho-amarelo">
+        <div class="logo-Tipo">
+            <img src=".\Imagens_Originais/Logo_Speed.png">
+        </div>
+        <div class="btn-cabecalho">
+            <a href="contato.html">
+                <button>Assine Já</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="cabecalho-cinza">   
+        <div class="container-menu">
+            <nav class="menu">
+                <a href="index.html">iSPEED</a>
+                <a href="cliente.html">Cliente</a>
+                <a href="planos.html">Planos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+        
+    </div>
+
+
+    <!------------------------------- C A B E Ç A L H O - C O M P L E T O ------------------------------->
+
+    <!--------------- T I M E R -------------->
+    <div class="container-timer">
+        <div class="timer">  
+            <div class="relogio">
+                <p>Promoção Netflix. Assine agora!</p>
+                <p id="demo"></p>
+            </div>
+        </div>
+    </div>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("mar 5, 2019 00:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+                
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+                
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "  dias - " + hours + ":"
+            + minutes + ":" + seconds + "";
+                
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+            }, 1000);
+        </script>    
+    <!-------/-------- T I M E R -------/------->
+    
+
+    <!------------- P R O M O Ç Ã O ------------->
+    <div class="promocao">
+        <p class="anuncio">Assine agora mesmo e ganhe 1 mês de NETFLIX!</p>
+        <p>(necessário cartão de crédito)</p>
+    </div>
+    <!------/------- P R O M O Ç Ã O ------/------->
+
+
+    <!------------ C O R P O ------------>
+    <div class="container-planos-de-internet">
+        <div class="box">
+            <p class="precos">R$ 50,00</p>
+            <hr>
+            <p>Instalação grátis</p>
+            <p>WIFI grátis</p>
+            <p>Sem anuidade</p>
+            <p>Sem consulta SPC</p>
+            <p>Conteúdo exclusivo</p>
+        </div>
+        <div class="box">
+            <p class="precos">R$ 60,00</p>
+            <hr>
+            <p>Instalação grátis</p>
+            <p>WIFI grátis</p>
+            <p>Sem anuidade</p>
+            <p>Sem consulta SPC</p>
+            <p>Conteúdo exclusivo</p>
+        </div>
+        <div class="box">
+            <p class="precos">R$ 70,00</p>
+            <hr>
+            <p>Instalação grátis</p>
+            <p>WIFI grátis</p>
+            <p>Sem anuidade</p>
+            <p>Sem consulta SPC</p>
+            <p>Conteúdo exclusivo</p>
+        </div>
+        <div class="box">
+            <p class="precos">R$ 80,00</p>
+            <hr>
+            <p>Instalação grátis</p>
+            <p>WIFI grátis</p>
+            <p>Sem anuidade</p>
+            <p>Sem consulta SPC</p>
+            <p>Conteúdo exclusivo</p>
+        </div>
+    </div>
+
+    <!------/------ C O R P O ------/------>    
+
+
+    <!------------------------------- R O D A P É ------------------------------->
+    <div class="rodape">
+        <h2>Mapa do Site</h2>
+        <div class="mapa"> 
+            <div class="div1">
+                <div><a href="">Assine Já</a></div>
+                <div><a href="">Conteúdo exclusivo</a></div>
+                <div><a href="">Consultar cobertura</a></div>
+            </div>
+            <div class="div2">
+                <div><a href="">Espaço</a></div>
+                <div><a href="">Espaço cliente</a></div>
+                <div><a href="">Reclamações e sugestões</a></div>
+            </div>
+            <div class="div3">
+                <div><a href="">Serviços</a></div>
+                <div><a href="">2ª via de boleto</a></div>
+                <div><a href="">Outros</a></div>                
+            </div>
+        </div>
+
+        <div class="parceiros">
+            <div>
+                <img src=".\Imagens_Originais/Anatel.png" alt="">
+            </div>
+            <div>
+                <p>AMÉRICA ON-LINE</p>
+            </div>
+        </div>
+        
+        <div class="dalon-almeida">
+            <p>Desenvolvido por dalonalmeida@hotmail.com</p>
+        </div>
+        
+    </div>
+    <!---------/--------- R O D A P É -------/-------/-->
+
+</body>
+</html>
